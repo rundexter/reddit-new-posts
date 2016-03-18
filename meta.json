@@ -2,25 +2,85 @@
  * Metadata describing the module operation
  */
 {
-    //Required. Inputs the module expects.
     "inputs": [
-        //e.g.
-        /*
         {
-            "id": "from",
-            "title":"From"
+            "id": "subreddit",
+            "title":"Subreddit"
+        },
+        {
+            "id": "t",
+            "title": "Time range"
+        },
+        {
+            "id": "after",
+            "title": "After"
+        },
+        {
+            "id": "before",
+            "title": "Before"
+        },
+        {
+            "id": "count",
+            "title": "Count"
+        },
+        {
+            "id": "limit",
+            "title": "Limit"
+        },
+        {
+            "id": "show",
+            "title": "Show"
+        },
+        {
+            "id": "sr_detail",
+            "title": "Expand subreddits"
         }
-        */
     ],
-    //Required. Outputs the module emits.
     "outputs": [
-      //e.g.
-      /*
         {
-            "id": "from",
-            "title":"From"
+            "id": "id",
+            "title": "ID"
+        },
+        {
+            "id": "author",
+            "title": "Author"
+        },
+        {
+            "id": "created_utc",
+            "title": "Created"
+        },
+        {
+            "id": "domain",
+            "title": "Domain"
+        },
+        {
+            "id": "permalink",
+            "title": "Link"
+        },
+        {
+            "id": "score",
+            "title": "Score"
+        },
+        {
+            "id": "title",
+            "title": "Title"
+        },
+        {
+            "id": "selftext",
+            "title": "Text"
+        },
+        {
+            "id": "url",
+            "title": "URL"
         }
-      */
     ],
-    "title": "Reddit new posts" /* Required.A display name for the module */
+    "providers": [
+        {
+            "name": "reddit",
+            "scopes": [ "read", "identity" ]
+        }
+    ],
+    "icon": "reddit",
+    "title": "Reddit new posts"
+
 }
